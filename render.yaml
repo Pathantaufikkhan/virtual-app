@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: virtual-frame-app
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python main3.py
+    plan: free
+    apt_packages:
+      - cmake
+      - g++
+      - python3-dev
